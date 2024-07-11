@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creat a container</title>
+</head>
+<style>
+    body{
+        background-color: rgb(0, 0, 0);
+    }
+    .container{
+        text-shadow: 10px 10px 10px 10px violet;
+        margin: auto;
+        width: 70vw;
+        height: 90vh;
+        background-color: rgb(51, 26, 26);
+        color: blanchedalmond;
+        display: grid;
+        /* grid-template-columns: 3fr; */
+        grid-gap: 0.5rem;
+        grid-template-areas: 
+        'com com sta sta'
+        'fru fru fru fru';
+    }
+    .item{
+            /* text-shadow: 10px 10px  violet; */
+        margin: 5px;
+        border: 2px solid rgb(255, 255, 255);
+        justify-content: center;
+
+    }
+    #computer{
+        grid-area: com;
+    }
+    #computer h1{
+        text-shadow: 10px 10px  violet;
+
+        text-align: center;
+    }
+    #computer p{
+        text-shadow: 10px 10px violet;
+
+        justify-content: center;
+
+        text-align: center;
+    }
+    #stationary{
+        text-shadow: 10px 10px green;
+        grid-area: sta;
+        
+    }
+    #stationary h1{
+        text-shadow: 10px 10px green;
+        text-align: center;
+    }
+    #stationary p{
+        text-shadow: 10px 10px green;
+
+        text-align: center;
+        justify-content: center;
+
+    }
+    #fruit{
+        grid-area: fru;
+    }
+    #fruit h1{
+        /* margin: auto;
+        align-items: center;
+        justify-content: center; */
+        text-align: center;
+        text-shadow: 10px 10px paleturquoise;
+    }
+    #fruit p{
+        text-shadow: 10px 10px paleturquoise;
+
+        justify-content: center;
+        text-align: center;
+    }
+    .pp{
+        text-decoration: underline;
+        /* border: 2px solid black */
+        text-align: center;
+        color: rgb(0, 0, 0);
+        text-shadow: 10px 10px rgb(185, 255, 127);
+    }
+</style>
+<body>
+    <div class="pp">
+        <h1>Welcome to my Shop</h1>
+    </div>
+    <div class="container">
+        <div id="computer" class="item">
+            <h1>computer</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum quaerat quisquam sunt, inventore dolores
+                nisi vero nemo harum quia expedita ducimus sequi obcaecati porro et sit? Asperiores excepturi itaque
+                earum dolorum. Veniam, cupiditate dicta?</p>
+        </div>
+        <div id="stationary" class="item">
+            <h1>stationary</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum quaerat quisquam sunt, inventore dolores
+                nisi vero nemo harum quia expedita ducimus sequi obcaecati porro et sit? Asperiores excepturi itaque
+                earum dolorum. Veniam, cupiditate dicta?</p>
+        </div>
+        <div id="fruit" class="item">
+            <h1>fruits</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum quaerat quisquam sunt, inventore dolores
+                nisi vero nemo harum quia expedita ducimus sequi obcaecati porro et sit? Asperiores excepturi itaque
+                earum dolorum. Veniam, cupiditate dicta?</p>
+        </div>
+    </div>
+</body>
+
+</html>
